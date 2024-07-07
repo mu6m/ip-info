@@ -1,0 +1,20 @@
+[package]
+name = "my_api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+captcha = "*"
+tokio = { version = "1", features = ["macros"] }
+serde_json = { version = "1", features = ["raw_value"] }
+# Documentation: https://docs.rs/vercel_runtime/latest/vercel_runtime
+vercel_runtime = { version = "1" }
+sha2 = "0.10.2"
+jsonwebtoken = "9.3.0"
+serde = { version = "1.0", features = ["derive"] }
+chrono = "0.4.38"
+postgres = "0.19.7"
+
+[[bin]]
+name = "check"
+path = "api/check.rs"

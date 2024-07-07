@@ -1,0 +1,6 @@
+.vercel
+.env
+target
+Cargo.lock
+*.json
+*.csv
